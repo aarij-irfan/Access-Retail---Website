@@ -443,7 +443,7 @@ export default function TransformingMarketPerformancePage() {
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
-                        src="https://amrc-y.com/wp-content/uploads/2019/11/bio.png"
+                        src="/bio.png"
                         alt="Retail Audit Studies"
                         width={600}
                         height={400}

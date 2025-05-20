@@ -258,7 +258,7 @@ function JourneyStory({ activeStory, setActiveStory }) {
       title: "Our Beginning",
       content:
         "Access Retail began with a vision to transform how retail insights are gathered and utilized. Starting with a small team of dedicated researchers, we set out to revolutionize retail intelligence for our clients.",
-      image: "https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=600",
+      image: "/fall-autumn-red-season.jpg",
       color: "blue",
     },
     {
@@ -266,7 +266,7 @@ function JourneyStory({ activeStory, setActiveStory }) {
       content:
         "Over the years, we have developed custom-designed research solutions that deliver actionable insights to our clients, expanded our team to ~300 FTEs nationwide, and ensured client servicing par excellence.",
       image:
-        "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "/growth.jpeg",
       color: "red",
     },
     {
@@ -274,7 +274,7 @@ function JourneyStory({ activeStory, setActiveStory }) {
       content:
         "Looking ahead, we are committed to pushing boundaries, embracing new technologies & solutions, and further raising the bar for retail research excellence across the board.",
       image:
-        "https://images.pexels.com/photos/3192640/pexels-photo-3192640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "/future.jpeg",
       color: "blue",
     },
   ]
@@ -300,7 +300,7 @@ function JourneyStory({ activeStory, setActiveStory }) {
                 className="absolute inset-0"
               >
                 <Image
-                  src={stories[activeStory].image || "/placeholder.svg"}
+                  src={stories[activeStory].image}
                   alt={stories[activeStory].title}
                   fill
                   className="object-cover"

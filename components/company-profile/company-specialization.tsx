@@ -77,7 +77,7 @@ export function CompanySpecialization() {
           <SpecializationCard
             title="Access Retail"
             description="Specialized in comprehensive retail research solutions across multiple sectors"
-            imageSrc="https://www.accessretailpk.com/wp-content/uploads/2024/03/AR-logo01-trasparent.png"
+            imageSrc="/logo/AR-Logo.png"
             color="red"
           />
         </div>
@@ -87,7 +87,7 @@ export function CompanySpecialization() {
           <SpecializationCard
             title="Access Consumetrics"
             description="Focused on in-depth consumer research and behavior analysis"
-            imageSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfv9CeZ2_5FgNhnRpZKtKyawo6Ufa7ri0eQg&s"
+            imageSrc="/Consumetrics.png"
             color="blue"
           />
         </div>

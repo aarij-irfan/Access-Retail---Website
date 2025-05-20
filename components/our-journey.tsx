@@ -105,7 +105,7 @@ export default function OurJourney() {
       description:
         "Launched Syndicated Retail Execution Tracker for telecom industry. Also conceived & established a tracker to measure trade discounts in beverage retail.",
       color: "blue",
-      image: "https://img.freepik.com/premium-photo/joint-development-new-product-business-technology-internet_161452-207.jpg?semt=ais_hybrid&w=740",
+      image: "/product-dev.jpg",
       achievements: [
         "Initiated customized retail measurement for telecom sector",
         "Pioneered trade discount measurement for beverages",
@@ -123,7 +123,7 @@ export default function OurJourney() {
       description:
         "Client-Centric Census Projects for Beverages & Telecom\nRetail Establishment Survey\nRetail Audit for Nicotine Top Tier Retail",
       color: "red",
-      image: "https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "/syndicated.jpg",
       achievements: [
         "Developed Specialized Retail Audit for Tobacco",
         "Established Basis for Syndicated Retail Measurement",
@@ -141,7 +141,7 @@ export default function OurJourney() {
       description:
         "Launched Syndicated National Retail Audit from Jan 2019.\nUpdated Retail Universe via Retail Census 2022",
       color: "blue",
-      image: "https://www.manthan.com/wp-content/uploads/2024/09/banner-2.jpg",
+      image: "/banner-2.jpg",
       achievements: [
         "Successful Launch of NRA",
         "Sustained Operations / Seamless Tracking during COVID-19",
