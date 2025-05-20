@@ -2,13 +2,9 @@
 
 import { useEffect, useRef, useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 import LoadingScreen from "@/components/loading-screen"
 import { motion } from "framer-motion"
-import RetailAuditStudiesPage from "../retail-audit-studies/page"
-import RetailCensusPage from "../retail-census/page"
-import MerchandizingAuditsPage from "../merchandizing-audits/page"
-import TradeMarginStudiesPage from "../trade-margin-studies/page"
-import AssetUtilizationTrackingPage from "../asset-utilization-tracking/page"
 import Footer from "@/components/footer"
 
 // Animated background with diagonal lines pattern
@@ -129,7 +125,7 @@ const SeparatorLine = () => {
   )
 }
 
-export default function TransformingMarketPerformancePage() {
+export default function TradeMarginStudiesPage() {
   const mainRef = useRef<HTMLElement>(null)
   const [loading, setLoading] = useState(true)
 
@@ -268,10 +264,10 @@ export default function TransformingMarketPerformancePage() {
                   ></motion.div>
 
                   <h1 className="text-5xl md:text-6xl lg:text-7xl text-white leading-tight mb-6">
-                    Transforming
+                    Trade Margin
                     <br />
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-blue-500">
-                      Retail Experiences
+                      Studies
                     </span>
                   </h1>
 
@@ -288,9 +284,7 @@ export default function TransformingMarketPerformancePage() {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.8, delay: 0.7 }}
                   >
-                    At Access Retail, we empower brands and retailers through extensive mapping of retail landscape,
-                    retail profiling & segmentation, actionable insights via market measurement, innovative in-store
-                    compliance audits, and comprehensive tracking of price implementation as well as tools of trade.
+                    Comprehensive analysis of trade margins and pricing strategies to optimize profitability and market positioning.
                   </motion.p>
 
                   <motion.div
@@ -312,8 +306,8 @@ export default function TransformingMarketPerformancePage() {
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-red-500/20 rounded-2xl blur-xl transform rotate-3"></div>
                     <div className="relative bg-[#001f4d]/60 backdrop-blur-sm p-2 rounded-2xl border border-white/10 shadow-2xl">
                       <Image
-                        src="/transforming.webp"
-                        alt="Market Share and Revenue Growth Chart"
+                        src="/trade-margin.webp"
+                        alt="Trade Margin Analysis Chart"
                         width={600}
                         height={400}
                         className="w-full h-auto rounded-lg"
@@ -325,34 +319,37 @@ export default function TransformingMarketPerformancePage() {
             </div>
           </div>
 
-          {/* Retail Audit Studies */}
-          <RetailAuditStudiesPage />
-
-          {/* Separator line */}
-          <SeparatorLine />
-
-          {/* Retail Census */}
-          <RetailCensusPage />
-
-          {/* Separator line */}
-          <SeparatorLine />
-
-          {/* Merchandizing Audits */}
-          <MerchandizingAuditsPage />
-
-          {/* Separator line */}
-          <SeparatorLine />
-
-          {/* Trade Margin Studies */}
-          <TradeMarginStudiesPage />
-
-          {/* Separator line */}
-          <SeparatorLine />
-
-          {/* Asset Utilization Tracking */}
-          <AssetUtilizationTrackingPage />
+          {/* Other Services Navigation */}
+          <div className="container mx-auto px-4 mt-16">
+            <h2 className="text-3xl text-white mb-8">Explore Our Other Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <Link href="/services/retail-audit-studies" className="group">
+                <div className="bg-[#001f4d]/60 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-white/20 transition-all">
+                  <h3 className="text-xl text-white mb-2 group-hover:text-blue-400 transition-colors">Retail Audit Studies</h3>
+                  <p className="text-white/70">Comprehensive retail audits and compliance monitoring</p>
+                </div>
+              </Link>
+              <Link href="/services/retail-census" className="group">
+                <div className="bg-[#001f4d]/60 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-white/20 transition-all">
+                  <h3 className="text-xl text-white mb-2 group-hover:text-blue-400 transition-colors">Retail Census</h3>
+                  <p className="text-white/70">Detailed mapping and profiling of retail landscape</p>
+                </div>
+              </Link>
+              <Link href="/services/merchandizing-audits" className="group">
+                <div className="bg-[#001f4d]/60 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-white/20 transition-all">
+                  <h3 className="text-xl text-white mb-2 group-hover:text-blue-400 transition-colors">Merchandizing Audits</h3>
+                  <p className="text-white/70">In-store compliance and merchandizing optimization</p>
+                </div>
+              </Link>
+              <Link href="/services/asset-utilization-tracking" className="group">
+                <div className="bg-[#001f4d]/60 backdrop-blur-sm p-6 rounded-xl border border-white/10 hover:border-white/20 transition-all">
+                  <h3 className="text-xl text-white mb-2 group-hover:text-blue-400 transition-colors">Asset Utilization Tracking</h3>
+                  <p className="text-white/70">Monitor and optimize asset performance</p>
+                </div>
+              </Link>
+            </div>
+          </div>
         </section>
-
 
         <Footer />
       </main>
