@@ -64,7 +64,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <FooterLink href="/" label="Home" />
               <FooterLink href="/about" label="About Us" />
-              <FooterLink href="/" label="What We Offer/Our Services" />
+              <FooterLink href="/services/transforming-market-perfomance" label="What We Offer" />
               {/* <FooterLink href="/capabilities" label="Capabilities" /> */}
               <FooterLink href="/why-access/leadership" label="Leadership" />
               <FooterLink href="/why-access/success-story" label="Why Access Retail?" />

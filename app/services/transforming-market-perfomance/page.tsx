@@ -439,7 +439,7 @@ export default function TransformingMarketPerformancePage() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-red-500/20 rounded-2xl blur-xl transform -rotate-3"></div>
-                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl">
+                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl group overflow-hidden">
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
@@ -447,7 +447,8 @@ export default function TransformingMarketPerformancePage() {
                         alt="Retail Audit Studies"
                         width={600}
                         height={400}
-                        className="rounded-xl w-full h-auto object-cover"
+                        className="rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+                        style={{ width: '600px', height: '400px' }}
                       />
                     </div>
                   </motion.div>
@@ -550,7 +551,7 @@ export default function TransformingMarketPerformancePage() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-red-500/20 rounded-2xl blur-xl transform -rotate-3"></div>
-                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl">
+                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl group overflow-hidden">
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
@@ -558,7 +559,8 @@ export default function TransformingMarketPerformancePage() {
                         alt="Retail Census Visualization"
                         width={600}
                         height={400}
-                        className="rounded-xl w-full h-auto object-cover"
+                        className="rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+                        style={{ width: '600px', height: '400px' }}
                       />
                     </div>
                   </motion.div>
@@ -658,15 +660,16 @@ export default function TransformingMarketPerformancePage() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-red-500/20 rounded-2xl blur-xl transform -rotate-3"></div>
-                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl">
+                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl group overflow-hidden">
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
-                        src="c"
+                        src="/MerchandizingAudit.jpg"
                         alt="Merchandizing Audits"
                         width={600}
                         height={400}
-                        className="rounded-xl w-full h-auto object-cover"
+                        className="rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+                        style={{ width: '600px', height: '400px' }}
                       />
                     </div>
                   </motion.div>
@@ -768,7 +771,7 @@ export default function TransformingMarketPerformancePage() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-red-500/20 rounded-2xl blur-xl transform -rotate-3"></div>
-                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl">
+                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl group overflow-hidden">
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
@@ -776,7 +779,8 @@ export default function TransformingMarketPerformancePage() {
                         alt="Trade Margin Studies"
                         width={600}
                         height={400}
-                        className="rounded-xl w-full h-auto object-cover"
+                        className="rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+                        style={{ width: '600px', height: '400px' }}
                       />
                     </div>
                   </motion.div>
@@ -878,7 +882,7 @@ export default function TransformingMarketPerformancePage() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                   >
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-red-500/20 rounded-2xl blur-xl transform -rotate-3"></div>
-                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl">
+                    <div className="relative bg-gradient-to-br from-blue-900/40 to-blue-800/40 backdrop-blur-sm p-1 rounded-2xl border border-blue-700/30 shadow-xl group overflow-hidden">
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
@@ -886,7 +890,8 @@ export default function TransformingMarketPerformancePage() {
                         alt="Asset Utilization Tracking"
                         width={600}
                         height={400}
-                        className="rounded-xl w-full h-auto object-cover"
+                        className="rounded-xl object-cover transition-transform duration-300 group-hover:scale-110"
+                        style={{ width: '600px', height: '400px' }}
                       />
                     </div>
                   </motion.div>

@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import type { MapContainerProps, TileLayerProps } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
 import { ExternalLink } from 'lucide-react'
@@ -18,20 +19,24 @@ export default function Map() {
   const position: [number, number] = [31.4814217, 74.3080872]
   const googleMapsUrl = `https://www.google.com/maps?q=${position[0]},${position[1]}`
 
+  const mapProps: MapContainerProps = {
+    center: position,
+    zoom: 15,
+    scrollWheelZoom: false,
+    style: { height: '100%', width: '100%' },
+    className: "z-0"
+  }
+
+  const tileLayerProps: TileLayerProps = {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  }
+
   return (
     <div className="flex flex-col gap-4 w-full">
       <div className="relative h-[300px] sm:h-[400px] md:h-[500px] w-full rounded-lg overflow-hidden">
-        <MapContainer
-          center={position}
-          zoom={15}
-          scrollWheelZoom={false}
-          style={{ height: '100%', width: '100%' }}
-          className="z-0"
-        >
-          <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
+        <MapContainer {...mapProps}>
+          <TileLayer {...tileLayerProps} />
           <Marker position={position} icon={CustomIcon}>
             <Popup>
               <div className="p-2">

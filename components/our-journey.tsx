@@ -88,12 +88,12 @@ export default function OurJourney() {
       color: "red",
       image: "/Census-option.jpg",
       achievements: [
-        "Profiled 650,000+ retail outlets",
+        "Profiled 750,000+ retail outlets",
         "Pioneered in capturing digital coordinates of retail population",
         "First company to conduct retail census in Afghanistan",
       ],
       stats: {
-        outlets: '650,000+',
+        outlets: '750,000+',
         "Cities /Villages": '17,000+',
         coverage: '>85%',
       },
@@ -160,7 +160,7 @@ export default function OurJourney() {
       description:
         "Inclusion of Modern Trade in NRA Scope\nDigital Retail Census – National scope",
       color: "red",
-      image: "https://images.ctfassets.net/grb5fvwhwnyo/2tIUH9lks24Fzx7TEv7JEx/ad57c49cb6b874fa078aed0b353d41ca/route-plan-optimization.jpg",
+      image: "/route-plan.jpg",
       achievements: [
         "Ensured IMT & LMT Coverage",
         "Profiled 700,000+ retail outlets",
@@ -478,14 +478,17 @@ function TimelineCard({ data, stats }: TimelineCardProps) {
           <div className="relative h-48 sm:h-64 md:h-auto overflow-hidden">
             <div className="absolute inset-0">
               <Image src={image || "/placeholder.svg"} alt={title} fill className="object-cover" />
-              <div
-                className={cn(
-                  "absolute inset-0",
-                  color === "blue"
-                    ? "bg-gradient-to-r from-blue-950/90 via-blue-900/70 to-transparent md:via-blue-900/70 md:to-transparent"
-                    : "bg-gradient-to-r from-red-900/20 via-red-800/10 to-transparent md:via-red-800/10 md:to-transparent",
-                )}
-              ></div>
+              {/* Remove overlay for 2023–2025 card */}
+              {title !== "Expansion & Excellence" && (
+                <div
+                  className={cn(
+                    "absolute inset-0",
+                    color === "blue"
+                      ? "bg-gradient-to-r from-blue-950/90 via-blue-900/70 to-transparent md:via-blue-900/70 md:to-transparent"
+                      : "bg-gradient-to-r from-red-900/20 via-red-800/10 to-transparent md:via-red-800/10 md:to-transparent",
+                  )}
+                ></div>
+              )}
             </div>
 
             {/* Year Overlay */}
