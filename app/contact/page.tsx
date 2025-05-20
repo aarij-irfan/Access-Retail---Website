@@ -23,7 +23,7 @@ const contactTeam = [
     id: 1,
     name: "For General Queries",
     email: "info@accessretailpk.com",
-    phone: "+92 300 5004494",
+    phone: "(042) 35201853",
     image: "/placeholder.svg?height=400&width=400&text=AQ",
     color: "blue",
   },
@@ -303,7 +303,7 @@ export default function ContactPage() {
                         onChange={handleChange}
                         required
                         className="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all duration-300"
-                        placeholder="+92 300 1234567"
+                        placeholder="+(042)35201853"
                       />
                       <Phone className="absolute right-3 top-1/2 transform -translate-y-1/2 text-white/40 h-5 w-5" />
                     </div>

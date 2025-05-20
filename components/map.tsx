@@ -34,8 +34,8 @@ export default function Map() {
 
   return (
     <div className="flex flex-col gap-4 w-full">
-      <div className="relative h-[300px] sm:h-[400px] md:h-[500px] w-full rounded-lg overflow-hidden">
-        <MapContainer {...mapProps}>
+      <div style={{ height: '400px', width: '100%' }} className="relative rounded-lg overflow-hidden">
+        <MapContainer {...mapProps} style={{ height: '100%', width: '100%' }}>
           <TileLayer {...tileLayerProps} />
           <Marker position={position} icon={CustomIcon}>
             <Popup>

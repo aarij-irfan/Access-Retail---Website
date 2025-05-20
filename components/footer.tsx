@@ -111,12 +111,12 @@ export default function Footer() {
               >
                 Powered By <span className="text-white">Gen-T AI Solutions</span>
               </Link>
-              <Link href="/privacy-policy" className="text-blue-200 hover:text-white text-sm transition-colors">
+              {/* <Link href="/privacy-policy" className="text-blue-200 hover:text-white text-sm transition-colors">
                 Privacy Policy
               </Link>
               <Link href="/terms-of-service" className="text-blue-200 hover:text-white text-sm transition-colors">
                 Terms of Service
-              </Link>
+              </Link> */}
               <button
                 onClick={scrollToTop}
                 className="bg-blue-800/50 hover:bg-blue-700/50 text-white p-2 rounded-full transition-colors"
