@@ -28,9 +28,8 @@ export default function PrestigiousClients() {
     { name: "", logo: "/logo/img17.png"},
     { name: "", logo: "/logo/img18.png"},
     { name: "", logo: "/logo/img19.png"},
-    { name: "", logo: "/logo/img20.png"},
+    { name: "", logo: "/logo/img20.webp"},
     { name: "", logo: "/logo/Picture7.png"},
-    { name: "", logo: "/logo/AR-Logo.webp"},
   ]
 
   return (
