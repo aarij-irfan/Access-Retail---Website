@@ -3,72 +3,76 @@ const fs = require('fs');
 const path = require('path');
 
 const PUBLIC_DIR = path.join(__dirname, '../public');
+const QUALITY = 80; // JPEG quality
+const MAX_WIDTH = 1920; // Maximum width for images
 
-// List of images that need optimization
-const imagesToOptimize = [
-  'retail-audit.jpg',
-  'trade-margin.jpg',
-  'transforming.jpg',
-  'office-cheer.png',
-  'Census-option.jpg',
-  'MerchandizingAudit.jpg',
-  'trademargin.jpg',
-  'Hussnain.jpg',
-  'ar-day-awards.png',
-  'ar-day-celebration.png',
-  'ar-day-games.png',
-  'ar-day-memory1.png',
-  'ar-day-talent.png',
-  'collaborative-code.png',
-  'collaborative-construction.png',
-  'collaborative-puzzle.png',
-  'collaborative-success.png',
-  'connected-play.png',
-  'interconnected-responsibility.png'
-];
+async function optimizeImage(filePath) {
+  const ext = path.extname(filePath).toLowerCase();
+  if (!['.jpg', '.jpeg', '.png', '.webp'].includes(ext)) return;
 
-async function optimizeImage(filename) {
-  const inputPath = path.join(PUBLIC_DIR, filename);
-  const outputPath = path.join(PUBLIC_DIR, `optimized-${filename}`);
-  
+  const stats = fs.statSync(filePath);
+  const fileSize = stats.size / 1024; // Size in KB
+
+  // Only optimize if file is larger than 100KB
+  if (fileSize < 100) return;
+
+  console.log(`Optimizing ${filePath} (${fileSize.toFixed(2)}KB)`);
+
   try {
-    const image = sharp(inputPath);
+    const image = sharp(filePath);
     const metadata = await image.metadata();
-    
-    // Calculate new dimensions while maintaining aspect ratio
-    let width = metadata.width;
-    let height = metadata.height;
-    
-    if (width > 1920) {
-      height = Math.round((height * 1920) / width);
-      width = 1920;
-    }
-    
-    // Optimize the image
-    await image
-      .resize(width, height, {
+
+    // Resize if width is larger than MAX_WIDTH
+    if (metadata.width > MAX_WIDTH) {
+      image.resize(MAX_WIDTH, null, {
         fit: 'inside',
         withoutEnlargement: true
-      })
-      .jpeg({ quality: 80, progressive: true })
+      });
+    }
+
+    // Convert to WebP for better compression
+    const outputPath = filePath.replace(ext, '.webp');
+    await image
+      .webp({ quality: QUALITY })
       .toFile(outputPath);
-    
-    // Replace original with optimized version
-    fs.unlinkSync(inputPath);
-    fs.renameSync(outputPath, inputPath);
-    
-    console.log(`Optimized ${filename}`);
+
+    // Get new file size
+    const newStats = fs.statSync(outputPath);
+    const newFileSize = newStats.size / 1024;
+    const savings = ((fileSize - newFileSize) / fileSize * 100).toFixed(2);
+
+    console.log(`✓ Optimized to ${newFileSize.toFixed(2)}KB (${savings}% smaller)`);
+
+    // Remove original file if WebP is smaller
+    if (newFileSize < fileSize) {
+      fs.unlinkSync(filePath);
+      console.log(`✓ Removed original file`);
+    } else {
+      fs.unlinkSync(outputPath);
+      console.log(`✗ Kept original file (WebP was larger)`);
+    }
   } catch (error) {
-    console.error(`Error optimizing ${filename}:`, error);
+    console.error(`Error optimizing ${filePath}:`, error);
   }
 }
 
-async function optimizeAllImages() {
-  for (const filename of imagesToOptimize) {
-    await optimizeImage(filename);
+async function processDirectory(directory) {
+  const files = fs.readdirSync(directory);
+
+  for (const file of files) {
+    const filePath = path.join(directory, file);
+    const stats = fs.statSync(filePath);
+
+    if (stats.isDirectory()) {
+      await processDirectory(filePath);
+    } else {
+      await optimizeImage(filePath);
+    }
   }
 }
 
-optimizeAllImages().then(() => {
-  console.log('Image optimization complete');
-}); 
+// Start optimization
+console.log('Starting image optimization...');
+processDirectory(PUBLIC_DIR)
+  .then(() => console.log('Image optimization complete!'))
+  .catch(console.error); 

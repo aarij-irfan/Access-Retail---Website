@@ -23,8 +23,6 @@ const DiagonalLinesBackground = () => {
             background: [
               "radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.4) 0%, transparent 60%)",
               "radial-gradient(circle at 60% 70%, rgba(239, 68, 68, 0.4) 0%, transparent 60%)",
-              "radial-gradient(circle at 30% 70%, rgba(59, 130, 246, 0.4) 0%, transparent 60%)",
-              "radial-gradient(circle at 70% 30%, rgba(239, 68, 68, 0.4) 0%, transparent 60%)",
               "radial-gradient(circle at 30% 20%, rgba(59, 130, 246, 0.4) 0%, transparent 60%)",
             ],
           }}
@@ -49,9 +47,9 @@ const DiagonalLinesBackground = () => {
         <rect width="100%" height="100%" fill="url(#diagonalLines)" />
       </svg>
 
-      {/* Floating particles */}
+      {/* Floating particles - reduced from 80 to 20 */}
       <div className="absolute inset-0">
-        {Array.from({ length: 80 }).map((_, i) => (
+        {Array.from({ length: 20 }).map((_, i) => (
           <motion.div
             key={i}
             className="absolute rounded-full"
@@ -60,21 +58,21 @@ const DiagonalLinesBackground = () => {
               top: `${Math.random() * 100}%`,
               width: `${Math.random() * 6 + 1}px`,
               height: `${Math.random() * 6 + 1}px`,
-              backgroundColor: ["rgba(59, 130, 246, 0.6)", "rgba(239, 68, 68, 0.6)", "rgba(255, 255, 255, 0.4)"][
-                Math.floor(Math.random() * 3)
+              backgroundColor: ["rgba(59, 130, 246, 0.6)", "rgba(239, 68, 68, 0.6)"][
+                Math.floor(Math.random() * 2)
               ],
               boxShadow: `0 0 ${Math.random() * 10 + 5}px ${
                 ["rgba(59, 130, 246, 0.6)", "rgba(239, 68, 68, 0.5)"][Math.floor(Math.random() * 2)]
               }`,
             }}
             animate={{
-              x: [0, Math.random() * 200 - 100, 0],
-              y: [0, Math.random() * 200 - 100, 0],
-              scale: [1, Math.random() * 1.5 + 0.5, 1],
-              opacity: [0.1, Math.random() * 0.5 + 0.3, 0.1],
+              x: [0, Math.random() * 100 - 50, 0],
+              y: [0, Math.random() * 100 - 50, 0],
+              scale: [1, Math.random() * 1.2 + 0.8, 1],
+              opacity: [0.1, Math.random() * 0.3 + 0.2, 0.1],
             }}
             transition={{
-              duration: Math.random() * 20 + 15,
+              duration: Math.random() * 15 + 10,
               repeat: Number.POSITIVE_INFINITY,
               ease: "easeInOut",
               delay: Math.random() * 5,
@@ -83,15 +81,15 @@ const DiagonalLinesBackground = () => {
         ))}
       </div>
 
-      {/* Animated data lines */}
+      {/* Animated data lines - reduced from 5 to 3 */}
       <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
-        {Array.from({ length: 5 }).map((_, i) => {
+        {Array.from({ length: 3 }).map((_, i) => {
           const startX = Math.random() * 100
           const startY = Math.random() * 100
           const endX = Math.random() * 100
           const endY = Math.random() * 100
-          const controlX1 = (startX + endX) / 2 + (Math.random() * 30 - 15)
-          const controlY1 = (startY + endY) / 2 + (Math.random() * 30 - 15)
+          const controlX1 = (startX + endX) / 2 + (Math.random() * 20 - 10)
+          const controlY1 = (startY + endY) / 2 + (Math.random() * 20 - 10)
 
           return (
             <motion.path
@@ -104,11 +102,11 @@ const DiagonalLinesBackground = () => {
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{
                 pathLength: [0, 1, 1, 0],
-                opacity: [0, 0.6, 0.6, 0],
-                strokeWidth: [1, 2, 2, 1],
+                opacity: [0, 0.4, 0.4, 0],
+                strokeWidth: [1, 1.5, 1.5, 1],
               }}
               transition={{
-                duration: 15 + i * 2,
+                duration: 12 + i * 2,
                 repeat: Number.POSITIVE_INFINITY,
                 ease: "easeInOut",
                 times: [0, 0.4, 0.6, 1],
