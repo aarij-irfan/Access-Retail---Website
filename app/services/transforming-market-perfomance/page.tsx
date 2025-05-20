@@ -886,7 +886,7 @@ export default function TransformingMarketPerformancePage() {
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
-                        src="/hussnain.webp"
+                        src="/Hussnain.webp"
                         alt="Asset Utilization Tracking"
                         width={600}
                         height={400}

@@ -37,7 +37,6 @@ export default function AboutPage() {
         className="min-h-screen bg-gradient-to-b from-blue-950 to-blue-900"
         style={{ opacity: loading ? 0 : 1, transition: "opacity 0.5s ease-in-out" }}
       >
-        <AboutHero />
         <AboutIntro />
         <Footer />
       </main>
