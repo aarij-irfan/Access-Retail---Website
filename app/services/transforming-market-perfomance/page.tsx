@@ -334,7 +334,7 @@ export default function TransformingMarketPerformancePage() {
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-red-500/20 rounded-2xl blur-xl transform rotate-3"></div>
                     <div className="relative bg-[#001f4d]/60 backdrop-blur-sm p-2 rounded-2xl border border-white/10 shadow-2xl">
                       <Image
-                        src="/transforming.jpg"
+                        src="/transforming.webp"
                         alt="Market Share and Revenue Growth Chart"
                         width={600}
                         height={400}
@@ -443,7 +443,7 @@ export default function TransformingMarketPerformancePage() {
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
-                        src="/bio.png"
+                        src="/bio.webp"
                         alt="Retail Audit Studies"
                         width={600}
                         height={400}
@@ -555,7 +555,7 @@ export default function TransformingMarketPerformancePage() {
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
-                        src="/Census-option.jpg"
+                        src="/Census-option.webp"
                         alt="Retail Census Visualization"
                         width={600}
                         height={400}
@@ -664,7 +664,7 @@ export default function TransformingMarketPerformancePage() {
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
-                        src="/MerchandizingAudit.jpg"
+                        src="/MerchandizingAudit.webp"
                         alt="Merchandizing Audits"
                         width={600}
                         height={400}
@@ -886,7 +886,7 @@ export default function TransformingMarketPerformancePage() {
                       <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                       <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                       <Image
-                        src="/hussnain.jpg"
+                        src="/hussnain.webp"
                         alt="Asset Utilization Tracking"
                         width={600}
                         height={400}

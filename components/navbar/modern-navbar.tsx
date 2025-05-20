@@ -643,7 +643,7 @@ export default function ModernNavbar() {
               <Link href="/" className="flex items-center">
                 <div className="relative h-6 w-24 sm:h-7 sm:w-28 md:h-8 md:w-32 transition-transform duration-300 group-hover:scale-105">
                   <Image
-                    src="/logo/AR-Logo.png"
+                    src="/logo/AR-Logo.webp"
                     alt="Access Retail Logo"
                     fill
                     className="object-contain"

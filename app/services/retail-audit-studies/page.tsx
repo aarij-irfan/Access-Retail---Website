@@ -382,7 +382,7 @@ export default function RetailAuditStudiesPage() {
                     <div className="absolute -top-4 -right-4 w-20 h-20 bg-red-500/20 rounded-full blur-xl"></div>
                     <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-blue-500/20 rounded-full blur-xl"></div>
                     <Image
-                      src="/retail-audit.jpg"
+                      src="/retail-audit.webp"
                       alt="Retail Audit Studies"
                       width={600}
                       height={400}

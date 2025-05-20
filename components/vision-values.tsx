@@ -266,7 +266,7 @@ function JourneyStory({ activeStory, setActiveStory }) {
       content:
         "Over the years, we have developed custom-designed research solutions that deliver actionable insights to our clients, expanded our team to ~300 FTEs nationwide, and ensured client servicing par excellence.",
       image:
-        "/growth.jpeg",
+        "/growth.webp",
       color: "red",
     },
     {
@@ -274,7 +274,7 @@ function JourneyStory({ activeStory, setActiveStory }) {
       content:
         "Looking ahead, we are committed to pushing boundaries, embracing new technologies & solutions, and further raising the bar for retail research excellence across the board.",
       image:
-        "/future.jpeg",
+        "/future.webp",
       color: "blue",
     },
   ]

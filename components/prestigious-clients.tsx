@@ -12,10 +12,10 @@ export default function PrestigiousClients() {
   const clients = [
     { name: "", logo: "/logo/img1.png"},
     { name: "", logo: "/logo/img2.png"},
-    { name: "", logo: "/logo/img3.png"},
+    { name: "", logo: "/logo/img3.webp"},
     { name: "", logo: "/logo/img4.png"},
-    { name: "", logo: "/logo/img5.png"},
-    { name: "", logo: "/logo/img6.png"},
+    { name: "", logo: "/logo/img5.webp"},
+    { name: "", logo: "/logo/img6.webp"},
     { name: "", logo: "/logo/img7.png"},
     { name: "", logo: "/logo/img8.png"},
     { name: "", logo: "/logo/img9.png"},
@@ -30,6 +30,7 @@ export default function PrestigiousClients() {
     { name: "", logo: "/logo/img19.png"},
     { name: "", logo: "/logo/img20.png"},
     { name: "", logo: "/logo/Picture7.png"},
+    { name: "", logo: "/logo/AR-Logo.webp"},
   ]
 
   return (

@@ -48,7 +48,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/logo/AR-Logo.png" type="image/png" />
+        <link rel="icon" href="/logo/AR-Logo.webp" type="image/png" />
         <link rel="canonical" href="https://accessretailpk.com" />
         {/* Add external script file for scroll prevention */}
         <Script src="/scroll-fix.js" strategy="beforeInteractive" />

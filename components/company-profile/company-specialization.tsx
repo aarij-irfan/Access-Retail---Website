@@ -77,7 +77,7 @@ export function CompanySpecialization() {
           <SpecializationCard
             title="Access Retail"
             description="Specialized in comprehensive retail research solutions across multiple sectors"
-            imageSrc="/logo/AR-Logo.png"
+            imageSrc="/logo/AR-Logo.webp"
             color="red"
           />
         </div>

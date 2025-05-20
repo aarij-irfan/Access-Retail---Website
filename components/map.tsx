@@ -9,7 +9,7 @@ import { ExternalLink } from 'lucide-react'
 
 // Custom icon using AR logo
 const CustomIcon = L.icon({
-  iconUrl: '/logo/AR-Logo.png',
+  iconUrl: '/logo/AR-Logo.webp',
   iconSize: [40, 40], // Adjust size as needed
   iconAnchor: [20, 40], // Center the icon horizontally and align bottom with the point
   popupAnchor: [0, -40], // Popup appears above the icon

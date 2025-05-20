@@ -312,7 +312,7 @@ export default function TransformingMarketPerformancePage() {
                     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-red-500/20 rounded-2xl blur-xl transform rotate-3"></div>
                     <div className="relative bg-[#001f4d]/60 backdrop-blur-sm p-2 rounded-2xl border border-white/10 shadow-2xl">
                       <Image
-                        src="/transforming.png"
+                        src="/transforming.webp"
                         alt="Market Share and Revenue Growth Chart"
                         width={600}
                         height={400}

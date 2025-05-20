@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="mb-6">
               <Link href="/" className="inline-block">
                 <Image
-                  src="/logo/AR-Logo.png"
+                  src="/logo/AR-Logo.webp"
                   alt="Access Retail Logo"
                   width={150}
                   height={40}

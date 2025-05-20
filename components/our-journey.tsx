@@ -67,7 +67,7 @@ export default function OurJourney() {
       description:
         "Initiated Retail Merchandizing Audit on HHTs, including 'Perfect Store Audit' for major FMCG company and a proprietary merchandizing audit for major beverage company with phenomenal tracking for almost a decade.",
       color: "blue",
-      image: "/MerchandizingAudit.jpg",
+      image: "/MerchandizingAudit.webp",
       achievements: [
         "Launched first digital audit system",
         "Partnered with major MNCs",
@@ -86,7 +86,7 @@ export default function OurJourney() {
       description:
         "Largest Retail Census of Pakistan – National scope & first-ever Retail Census in Afghanistan covering >80% urban market.",
       color: "red",
-      image: "/Census-option.jpg",
+      image: "/Census-option.webp",
       achievements: [
         "Profiled 750,000+ retail outlets",
         "Pioneered in capturing digital coordinates of retail population",
@@ -123,7 +123,7 @@ export default function OurJourney() {
       description:
         "Client-Centric Census Projects for Beverages & Telecom\nRetail Establishment Survey\nRetail Audit for Nicotine Top Tier Retail",
       color: "red",
-      image: "/syndicated.jpg",
+      image: "/syndicated.webp",
       achievements: [
         "Developed Specialized Retail Audit for Tobacco",
         "Established Basis for Syndicated Retail Measurement",
@@ -160,7 +160,7 @@ export default function OurJourney() {
       description:
         "Inclusion of Modern Trade in NRA Scope\nDigital Retail Census – National scope",
       color: "red",
-      image: "/route-plan.jpg",
+      image: "/route-plan.webp",
       achievements: [
         "Ensured IMT & LMT Coverage",
         "Profiled 700,000+ retail outlets",

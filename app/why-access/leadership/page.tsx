@@ -197,7 +197,7 @@ const leadershipTeam = [
     expertise: "Operations Design & Leadership, Insights",
     description:
       "Mr. Muhammad Irfan Butt carries to his credit extensive experience of managing large scale operations (in research & sales) inside and outside Pakistan.\n\nHe co-founded Access Retail in 2009 that later became market leader in its domain. Earlier he has handled retail audit and census operations for global leader in retail research covering Middle East, North Africa & Pakistan region. Also headed regional Sales & Marketing function of a key beverage player, where he won Performance Excellence Award for 2 years consecutively. He is a go-getter and a strong leader habitual of pushing boundaries for continuous rise in performance. ",
-    image: "/irfan.jpg",
+    image: "/irfan.JPG",
     color: "red",
   },
 ]
